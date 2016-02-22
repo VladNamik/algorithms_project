@@ -1,9 +1,9 @@
-package vladnaminas.developer.com;
+package com.vladnaminas.developer;
 
 
 import java.util.*;
 
-import static vladnaminas.developer.com.SortAlgorithms.*;
+import static com.vladnaminas.developer.SortAlgorithms.*;
 
 public class GreedyAlgorithms {
 

@@ -1,10 +1,10 @@
-package vladnaminas.developer.com;
+package com.vladnaminas.developer;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import static vladnaminas.developer.com.DivideAndConquerAlgorithms.*;
-import static vladnaminas.developer.com.DynamicProgramming.*;
+import static com.vladnaminas.developer.DivideAndConquerAlgorithms.*;
+import static com.vladnaminas.developer.DynamicProgramming.*;
 public class Algorithms {
     public static long gcd(long a, long b)//���������� ����������� ������ ��������
     {

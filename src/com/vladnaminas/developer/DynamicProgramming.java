@@ -1,4 +1,4 @@
-package vladnaminas.developer.com;
+package com.vladnaminas.developer;
 
 
 
