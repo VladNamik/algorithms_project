@@ -1,15 +1,13 @@
-package com.company.example;
+package vladnaminas.developer.com;
 
 
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Stack;
-import static com.company.example.Algorithms.*;
 
 public class SortAlgorithms {
 
-    private static class EncodedNumber//кодировка
+    private static class EncodedNumber//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         static int[] digitArray = {1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32};
         static boolean[] digitSignificance = {true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true};
@@ -19,11 +17,11 @@ public class SortAlgorithms {
             return digitArray[digit-1];
         }
     }
-    private static int getDigit(int number, int digit)//получение значение разряда в числе
+    private static int getDigit(int number, int digit)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
     {
         return (number >> (digit-1))%2;
     }
-    private static void digitRadixSort(int[] array, int digit)//вспомогательная для поразрядной сортировки
+    private static void digitRadixSort(int[] array, int digit)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         int zeroQuantity =0;
         int oneQuantity = 0;
@@ -62,7 +60,7 @@ public class SortAlgorithms {
         for (int i=0; i<array.length; i++)
             array[i]=newArray[i];
     }
-    public static void intRadixSort(int[] array)//поразрядная сортировка с использованием кодировки EncodedNumber
+    public static void intRadixSort(int[] array)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ EncodedNumber
     {
         int k=0;
         for (int i=0; i < array.length; i++)
@@ -96,7 +94,7 @@ public class SortAlgorithms {
         for (int i=0; i< notReverseArray.length; i++)
             array[reverseArray.length+i]=notReverseArray[i];
     }
-    public static int getInversionCounter(Comparable[] array)//подсчёт количества инверсий(использует mergeSort с двумя аргументами)
+    public static int getInversionCounter(Comparable[] array)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ mergeSort пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
     {
         Comparable[] newArray= new Comparable[(int)Math.pow(2, (int)(Math.log(array.length)/Math.log(2))+1)];
         for (int i =0 ; i< array.length; i++)
@@ -109,7 +107,7 @@ public class SortAlgorithms {
         return inversionCounter;
     }
     private static int inversionCounter=0;
-    public static  void mergeSort(Comparable[] array)//сортировка слиянием
+    public static  void mergeSort(Comparable[] array)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         Queue<Comparable[]> queue = new LinkedList<>();
         for (Comparable element : array)
@@ -125,7 +123,7 @@ public class SortAlgorithms {
         for(int i =0; i<array.length; i++)
             array[i]=outArray[i];
     }
-    private static Comparable[] merge(Comparable[] firstArray, Comparable[] secondArray)//вспомогательная для сортировки слиянием
+    private static Comparable[] merge(Comparable[] firstArray, Comparable[] secondArray)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         Comparable[] outArray = new Comparable[firstArray.length+secondArray.length];
         int i=0, j=0;
@@ -147,7 +145,7 @@ public class SortAlgorithms {
             outArray[i+j]=secondArray[j];
         return outArray;
     }
-    public static void bubleSort(Comparable[] array)// сортировка пузырьком
+    public static void bubleSort(Comparable[] array)// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         for (int i = 0; i< array.length-1; i++)
             for (int j = i+1; j< array.length; j++)
@@ -158,7 +156,7 @@ public class SortAlgorithms {
                     array[j]=a;
                 }
     }
-    public static void QuickSort(Comparable[] inputArray)// быстрая сортировка
+    public static void QuickSort(Comparable[] inputArray)// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         Queue<Comparable[]> queue = new LinkedList<>();
         Queue<Integer> indexQueue = new LinkedList<>();
@@ -177,17 +175,17 @@ public class SortAlgorithms {
             left = 0;
             right = array.length - 1;
             currentIndex = left;
-            if ((median = medianOf(array[left], array[right], array[(right - left) / 2])) == array[right])
-                swap(array, left, right);
+            if ((median = Algorithms.medianOf(array[left], array[right], array[(right - left) / 2])) == array[right])
+                Algorithms.swap(array, left, right);
             else if (median == array[(right - left) / 2])
-                swap(array, left, (right - left) / 2);
+                Algorithms.swap(array, left, (right - left) / 2);
             for (int i = left + 1; i <= right; i++) {
                 if (array[i].compareTo(array[left]) <= 0) {
                     currentIndex++;
-                    swap(array, currentIndex, i);
+                    Algorithms.swap(array, currentIndex, i);
                 }
             }
-            swap(array, currentIndex, left);
+            Algorithms.swap(array, currentIndex, left);
             int leftSimilarIndex=currentIndex;
             while (leftSimilarIndex>=0 && array[leftSimilarIndex]==array[currentIndex])
                 leftSimilarIndex--;

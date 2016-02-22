@@ -1,12 +1,12 @@
-package com.company.example;
+package vladnaminas.developer.com;
 
 import java.util.LinkedList;
 import java.util.List;
 
-import static com.company.example.DivideAndConquerAlgorithms.*;
-import static com.company.example.DynamicProgramming.*;
+import static vladnaminas.developer.com.DivideAndConquerAlgorithms.*;
+import static vladnaminas.developer.com.DynamicProgramming.*;
 public class Algorithms {
-    public static long gcd(long a, long b)//нахождение наибольшего общего делителя
+    public static long gcd(long a, long b)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         while ((a!=0) && (b!=0))
         {
@@ -17,18 +17,18 @@ public class Algorithms {
         }
         return a+b;
     }
-    public static Comparable medianOf(Comparable... a)//медиана
+    public static Comparable medianOf(Comparable... a)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         return orderStatistic((a.length-1)/2,a);
     }
-    public static void swap(Object[] array, int a, int b)//меняет местами два элемента массива по индексам
+    public static void swap(Object[] array, int a, int b)//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         Object k = array[a];
         array[a]=array[b];
         array[b]=k;
     }
 
-    public static int min(int... array)//находит минимум среди целых чисел
+    public static int min(int... array)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     {
         int min=array[0];
         for (int k : array)
@@ -36,7 +36,7 @@ public class Algorithms {
                 min=k;
         return min;
     }
-    public static int max(int... array)//находит максимум среди целых чисел
+    public static int max(int... array)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
     {
         int max=array[0];
         for (int k : array)
@@ -46,7 +46,7 @@ public class Algorithms {
     }
 
     private static int[] primeNumbers = {2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107};
-    public static List<Integer> primeFactorization(int k)//разделяет число на простые множители
+    public static List<Integer> primeFactorization(int k)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         List<Integer> list = new LinkedList<>();
         if (k<=1)
@@ -55,7 +55,7 @@ public class Algorithms {
         int currentDivider=primeNumbers[currentDividerNumberInArray];
         while(k!=1)
         {
-            if (currentDivider>=Math.sqrt(k)+1)//проверяем, не осталось ли у нас простое число
+            if (currentDivider>=Math.sqrt(k)+1)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
             {
                 list.add(k);
                 break;
@@ -75,10 +75,10 @@ public class Algorithms {
     }
 
 
-    public static Pair<Integer, Integer> getPairOfIndexOfMaxSum(int[] firstArray, int[] secondArray)//Даны два массива целых чисел одинаковой длины A[0..n?1] и B[0..n?1].Необходимо найти первую пару индексов i0 и j0, i0?j0, такую что A[i0]+B[j0]=max{A[i]+B[j],где0?i<n,0?j<n,i?j}.Время работы – O(n).
+    public static Pair<Integer, Integer> getPairOfIndexOfMaxSum(int[] firstArray, int[] secondArray)//пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ A[0..n?1] пїЅ B[0..n?1].пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ i0 пїЅ j0, i0?j0, пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ A[i0]+B[j0]=max{A[i]+B[j],пїЅпїЅпїЅ0?i<n,0?j<n,i?j}.пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ O(n).
     {
-        int[] firstArrayMaxElementsIndex = new int[firstArray.length];//массив индексов максимальных элементов первого массива на отрезках от 0 до индекса массива индексов
-        int bufIndexOfMax=0;//буферный элемент, показывает индекс максимума на итерации
+        int[] firstArrayMaxElementsIndex = new int[firstArray.length];//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ 0 пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+        int bufIndexOfMax=0;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         for (int i=0; i<firstArray.length; i++)
         {
             if (firstArray[i]>firstArray[bufIndexOfMax])
@@ -126,11 +126,11 @@ public class Algorithms {
         }
         return outputArray;
     }
-    public static int binarySearchForTheNearest(int[] array, int element)//возвращает индекс ближайшего меньшего
+    public static int binarySearchForTheNearest(int[] array, int element)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         int begin=0;
         int end=array.length;
-        int index=-1;//искомый индекс
+        int index=-1;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
         while (begin<end)
         {
             index=begin+(end-begin)/2;

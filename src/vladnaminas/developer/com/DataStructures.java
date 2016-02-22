@@ -1,10 +1,10 @@
-package com.company.example;
+package vladnaminas.developer.com;
 
 import java.util.*;
 
 public class DataStructures {
 
-    public static class SimpleLinkedList<T> implements List<T>, Deque<T>//Простой список
+    public static class SimpleLinkedList<T> implements List<T>, Deque<T>//РїСЂРѕСЃС‚РѕР№ СЃРїРёСЃРѕРє
     {
         private T data=null;
         private SimpleLinkedList<T> next=null;
@@ -85,7 +85,7 @@ public class DataStructures {
         }
 
         @Override
-        public boolean add(T e)//NullPointerException исправить
+        public boolean add(T e)//NullPointerException пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         {
             if (isEmpty())
                 data = e;
@@ -480,7 +480,7 @@ public class DataStructures {
         int size();
     }
 
-    public static class ListPriorityQueue<T> implements Queue<T> , SimpleQueue<T>//Очередь с приоритетами на основе списка
+    public static class ListPriorityQueue<T> implements Queue<T> , SimpleQueue<T>//РѕС‡РµСЂРµРґСЊ СЃ РїСЂРёРѕСЂРёС‚РµС‚РѕРј РЅР° РѕСЃРЅРѕРІРµ РѕС‡РµСЂРµРґРё
     {
         private T data=null;
         private ListPriorityQueue<T> next=null;
@@ -792,7 +792,7 @@ public class DataStructures {
         }
     }
 
-    public static class MinHeapTree<T> implements SimpleQueue<T>//Очередь с приоритетами на основе кучи с минимумом в вершине
+    public static class MinHeapTree<T> implements SimpleQueue<T>//РєСѓС‡Р° СЃ РјРёРЅРёРјР°Р»СЊРЅС‹Рј СЌР»РµРјРµРЅС‚РѕРј РІ РіРѕР»РѕРІРµ РЅР° РѕСЃРЅРѕРІРµ РѕС‡РµСЂРµРґРё
     {
         private T data;
         private final Comparator<T> comparator;
@@ -805,7 +805,7 @@ public class DataStructures {
         {
             this.comparator= new Comparator<T>() {
                 @Override
-                public int compare(T o1, T o2) {//будем считать, что если один из элементов не существует, он является бОльшим
+                public int compare(T o1, T o2) {//пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
                     if (o1==null && o2==null)
                         return 0;
                     else if (o1==null)
@@ -838,11 +838,11 @@ public class DataStructures {
             newElement.left=null;
             newElement.right=null;
 
-            // для создания сбалансированного дерева, вычисляется оптимальное местоположение для помещаемого елемента
-            MinHeapTree<T> bufferElement = this;//элемент для перемещения
-            int height= (int)(Math.log(size)/Math.log(2));//высота поддерева,начиная от головы основного дерева
-            int placeNumber=size % (int)Math.pow(2,height);//указывает направление движения
-            for (int i=1; i< (int)(Math.log(size)/Math.log(2)); i++)//доходим до родительского элемента
+            // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            MinHeapTree<T> bufferElement = this;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            int height= (int)(Math.log(size)/Math.log(2));//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ,пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+            int placeNumber=size % (int)Math.pow(2,height);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            for (int i=1; i< (int)(Math.log(size)/Math.log(2)); i++)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             {
                 if (placeNumber>=(int)Math.pow(2,height-1))
                     bufferElement=bufferElement.right;
@@ -860,15 +860,15 @@ public class DataStructures {
                 bufferElement.left=newElement;
                 newElement.parent=bufferElement;
             }
-            sift(newElement);//просеивание вставленного элемента
+            sift(newElement);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         }
 
         private MinHeapTree<T> getLastElement()
         {
-            MinHeapTree<T> bufferElement = this;//элемент для перемещения
-            int height= (int)(Math.log(size)/Math.log(2));//высота поддерева,начиная от головы основного дерева
-            int placeNumber=size % (int)Math.pow(2,height);//указывает направление движения
-            for (int i=0; i< (int)(Math.log(size)/Math.log(2)); i++)//доходим до родительского элемента
+            MinHeapTree<T> bufferElement = this;//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            int height= (int)(Math.log(size)/Math.log(2));//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ,пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+            int placeNumber=size % (int)Math.pow(2,height);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            for (int i=0; i< (int)(Math.log(size)/Math.log(2)); i++)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
             {
                 if (placeNumber>=(int)Math.pow(2,height-1))
                     bufferElement=bufferElement.right;
@@ -891,8 +891,8 @@ public class DataStructures {
             }
             MinHeapTree<T> removedElement =sift(this);
             swapData(removedElement,getLastElement());
-            sift(removedElement);//просеиваем элемент, который мы поменяли местами с удаляемым
-            MinHeapTree<T> removeElementParent = getLastElement().parent;//удаляя последний элемент из дерева мы сохраняем баланс
+            sift(removedElement);//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            MinHeapTree<T> removeElementParent = getLastElement().parent;//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
             if (removeElementParent.left.data==null)
                 removeElementParent.left=null;
             else
@@ -906,19 +906,19 @@ public class DataStructures {
         {
             return extractMin();
         }
-        private void swapData(MinHeapTree<T> first, MinHeapTree<T> second) //обмен данных между двумя вершинами
+        private void swapData(MinHeapTree<T> first, MinHeapTree<T> second) //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         {
             T bufData=first.data;
             first.data=second.data;
             second.data=bufData;
         }
 
-        private MinHeapTree<T> sift(MinHeapTree<T> element) //"просеивание" элемента
+        private MinHeapTree<T> sift(MinHeapTree<T> element) //"пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
         {
             return siftDown(siftUp(element));
         }
 
-        private MinHeapTree<T> siftUp(MinHeapTree<T> element) // "просеивание" вверх
+        private MinHeapTree<T> siftUp(MinHeapTree<T> element) // "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅпїЅ
         {
             MinHeapTree<T> bufElement = element;
             while(bufElement.parent!=null && comparator.compare(bufElement.parent.data, bufElement.data)>0) {
@@ -928,17 +928,17 @@ public class DataStructures {
             return bufElement;
         }
 
-        private MinHeapTree<T> siftDown(MinHeapTree<T> element) // "просеивание" вниз
+        private MinHeapTree<T> siftDown(MinHeapTree<T> element) // "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ" пїЅпїЅпїЅпїЅ
         {
             MinHeapTree<T> bufElement = element;
             while(bufElement.left!=null && bufElement.right!=null && (comparator.compare(bufElement.left.data,bufElement.data)<0 || comparator.compare(bufElement.right.data,bufElement.data)<0))
             {
-                if (comparator.compare(bufElement.left.data, bufElement.right.data)>=0)//меняем с правым листом
+                if (comparator.compare(bufElement.left.data, bufElement.right.data)>=0)//пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
                 {
                     swapData(bufElement, bufElement.right);
                     bufElement=bufElement.right;
                 }
-                else //иначе меняем с левым
+                else //пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ
                 {
                     swapData(bufElement, bufElement.left);
                     bufElement=bufElement.left;
@@ -953,7 +953,7 @@ public class DataStructures {
         }
     }
 
-    public static class MaxHeapTree<T> implements SimpleQueue<T>//Очередь с приоритетами на основе кучи с максимум в вершине
+    public static class MaxHeapTree<T> implements SimpleQueue<T>//РєСѓС‡Р° СЃ РјР°РєСЃРёРјР°Р»СЊРЅС‹Рј СЌР»РµРјРµРЅС‚РѕРј РІ РіРѕР»РѕРІРµ РЅР° РѕСЃРЅРѕРІРµ РѕС‡РµСЂРµРґРё
     {
         MinHeapTree<T> heap;
 

@@ -1,10 +1,9 @@
-package com.company.example;
+package vladnaminas.developer.com;
 
 
-import static com.company.example.DataStructures.*;
 import java.util.*;
 
-import static com.company.example.SortAlgorithms.*;
+import static vladnaminas.developer.com.SortAlgorithms.*;
 
 public class GreedyAlgorithms {
 
@@ -126,7 +125,7 @@ public class GreedyAlgorithms {
 
     public static CharFreq getHuffmanTree(String stringToCode)//Создаёт дерево по алгоритму Хаффмана, на вход - строка для кодирования, на выходе - голова дерева
     {
-        SimpleQueue<CharFreq> queue = new ListPriorityQueue<>(CharFreq::comparing);
+        DataStructures.SimpleQueue<CharFreq> queue = new DataStructures.ListPriorityQueue<>(CharFreq::comparing);
 
         for (Character k='a'; k<='z'; k++)// ������� ������� ��� ������� ������� (��������� ������ ����� ����������� ��������, ��������)
         {

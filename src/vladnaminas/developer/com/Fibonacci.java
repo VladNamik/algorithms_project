@@ -1,8 +1,8 @@
-package com.company.example;
+package vladnaminas.developer.com;
 
 
 public class Fibonacci {
-    public static long fibNumber(int num)//получение числа Фибонначи по номеру
+    public static long fibNumber(int num)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     {
         long fib0 = 0;
         long fib1 = 1;
@@ -15,11 +15,11 @@ public class Fibonacci {
         }
         return fib2;
     }
-    public static long fibLastDigit(long num)//последняя цифра числа Фибоначчи по номеру
+    public static long fibLastDigit(long num)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
     {
         return fibModulo(num, 10);
     }
-    public static long fibModulo(long num, int m)//остаток от деления числа Фибоначчи по номеру num на m
+    public static long fibModulo(long num, int m)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ num пїЅпїЅ m
     {
         int fib0 = 0;
         int fib1 = 1;

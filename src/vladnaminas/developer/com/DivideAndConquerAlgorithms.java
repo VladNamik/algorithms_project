@@ -1,12 +1,10 @@
-package com.company.example;
+package vladnaminas.developer.com;
 
 import java.util.Arrays;
-import java.util.Comparator;
-import static com.company.example.Algorithms.*;
 
-//Алгоритмы, построенные по принципу "Разделяй и властвуй"
+//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ"
 public class DivideAndConquerAlgorithms {
-    public static <T> int binarySearch(Comparable<T>[] array, T element)//Бинарный поиск. В отсортированном массиве возвращает индекс искомого элемента
+    public static <T> int binarySearch(Comparable<T>[] array, T element)//пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ. пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         int left=0;
         int right=array.length-1;
@@ -25,7 +23,7 @@ public class DivideAndConquerAlgorithms {
         return -1;
     }
 
-    public static Comparable orderStatistic(int k, Comparable... a)//поиск k-той порядковой статистики в массиве
+    public static Comparable orderStatistic(int k, Comparable... a)//пїЅпїЅпїЅпїЅпїЅ k-пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     {
         Comparable[] array = Arrays.copyOf(a, a.length);
         int left=0;
@@ -35,16 +33,16 @@ public class DivideAndConquerAlgorithms {
         while (stat!=k)
         {
             currentIndex=left+(int)(Math.random()*(right-left)/2);
-            swap(array,left,currentIndex);
+            Algorithms.swap(array,left,currentIndex);
             currentIndex=left+1;
             for (int i=left+1; i<=right; i++)
             {
                 if (array[left].compareTo(array[i])>0) {
-                    swap(array, currentIndex, i);
+                    Algorithms.swap(array, currentIndex, i);
                     currentIndex++;
                 }
             }
-            swap(array, currentIndex-1, left);
+            Algorithms.swap(array, currentIndex-1, left);
             if (currentIndex-1>=k)
                 right=currentIndex-2;
             else
