@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3118fc6f-9955-4c75-8158-1f3bb1b6dbd8" name="Default" comment="" />
+    <list default="true" id="3118fc6f-9955-4c75-8158-1f3bb1b6dbd8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/AlgorithmsUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/courses/tasks/DynamicProgrammingTasks.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/courses/tasks/GreedyAlgorithmsTasks.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/datastructures/ListPriorityQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/datastructures/MaxHeap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/datastructures/MinHeap.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/datastructures/Pair.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/datastructures/SimpleLinkedList.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/datastructures/SimpleQueue.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/main/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/vladnamik/developer/sorting/SortAlgorithms.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vladnaminas/developer/Algorithms.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vladnaminas/developer/DataStructures.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vladnaminas/developer/DivideAndConquerAlgorithms.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vladnaminas/developer/DynamicProgramming.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vladnaminas/developer/Fibonacci.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/vladnaminas/developer/SortAlgorithms.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="MydbPr2.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,10 +44,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/vladnamik/developer/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0609319">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -50,9 +70,6 @@
       <projects_view />
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/DataStructures.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -68,6 +85,8 @@
         <option value="$PROJECT_DIR$/src/com/company/example/DataStructures.java" />
         <option value="$PROJECT_DIR$/src/vladnaminas/developer/com/DataStructures.java" />
         <option value="$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java" />
+        <option value="$PROJECT_DIR$/src/developer/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/vladnamik/developer/main/Main.java" />
       </list>
     </option>
   </component>
@@ -107,7 +126,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -122,14 +140,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
               <option name="myItemId" value="AlgorithmsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="developer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AlgorithmsProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="algorithms_project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="developer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,6 +203,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/AlgorithmsProject" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\android_java\algorithms_project\src" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -645,11 +709,12 @@
       <workItem from="1454843137951" duration="89000" />
       <workItem from="1456130324903" duration="616000" />
       <workItem from="1456131124949" duration="350000" />
+      <workItem from="1471260444586" duration="110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273706000" />
+    <option name="totallyTimeSpent" value="273816000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -672,7 +737,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.204236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -732,172 +797,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/DataStructures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="989" column="0" selection-start-line="989" selection-start-column="0" selection-end-line="989" selection-end-column="0" />
-          <folding>
-            <element signature="class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#contains#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#Iter#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#next#0;class#Iter#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#toArray#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="e#1822#1831#0" expanded="false" />
-            <element signature="method#toArray#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#add#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#remove#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#remove#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#updateLast#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#containsAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#addAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#addAll#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#removeAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#retainAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#clear#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#equals#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#hashCode#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#get#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#set#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#add#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#indexOf#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#lastIndexOf#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#subList#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#offerFirst#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#SimpleQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#clear#0;class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#equals#0;class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#hashCode#0;class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#MinHeapTree#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#MinHeapTree#0;class#MinHeapTree#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#sift#0;class#MinHeapTree#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#MaxHeapTree#0;class#DataStructures#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/SortAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Algorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_65/src.zip!/java/util/TreeSet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1080,122 +979,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Algorithms.java">
+    <entry file="file://$PROJECT_DIR$/src/com/vladnamik/developer/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/DataStructures.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="482" column="37" selection-start-line="482" selection-start-column="37" selection-end-line="482" selection-end-column="37" />
-          <folding>
-            <element signature="class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#contains#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#Iter#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#next#0;class#Iter#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#toArray#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="e#1822#1831#0" expanded="false" />
-            <element signature="method#toArray#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#add#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#remove#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#remove#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#updateLast#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#containsAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#addAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#addAll#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#removeAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#retainAll#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#clear#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#equals#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#hashCode#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#get#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#set#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#add#1;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#indexOf#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#lastIndexOf#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#subList#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#offerFirst#0;class#SimpleLinkedList#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#SimpleQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#clear#0;class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#equals#0;class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#hashCode#0;class#ListPriorityQueue#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#MinHeapTree#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#MinHeapTree#0;class#MinHeapTree#0;class#DataStructures#0" expanded="false" />
-            <element signature="method#sift#0;class#MinHeapTree#0;class#DataStructures#0" expanded="false" />
-            <element signature="class#MaxHeapTree#0;class#DataStructures#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/DivideAndConquerAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/DynamicProgramming.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Fibonacci.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="104" selection-start-line="21" selection-start-column="104" selection-end-line="21" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/SortAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36021507">
-          <caret line="104" column="28" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="28" />
-          <folding>
-            <element signature="method#mergeSort#0;class#SortAlgorithms#0" expanded="false" />
-            <element signature="method#merge#0;class#SortAlgorithms#0" expanded="false" />
-            <element signature="method#bubleSort#0;class#SortAlgorithms#0" expanded="false" />
-            <element signature="method#QuickSort#0;class#SortAlgorithms#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/GreedyAlgorithms.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2437276">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="method#SimpleLine#1;class#SimpleLine#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#coveredLinesDots#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="class#SimpleObject#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#continuousBackpackTask#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="class#CharFreq#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#CharFreq#0;class#CharFreq#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#CharFreq#1;class#CharFreq#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#comparing#0;class#CharFreq#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#getCharFreqFromString#0;class#CharFreq#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#getHuffmanTree#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#fromHuffmanTreeToMap#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#fromMapToHuffmanTree#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#stringCoding#0;class#GreedyAlgorithms#0" expanded="false" />
-            <element signature="method#stringDecoding#0;class#GreedyAlgorithms#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vladnaminas/developer/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0609319">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
